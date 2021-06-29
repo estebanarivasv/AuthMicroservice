@@ -12,6 +12,10 @@ For running with Docker:
 ### How to get the application up and running?
 First, define environment variables creating an .env file in `/docker` (see .env-example as an example).
 
-Then, run docker compose command at `/AuthMicroservice/docker` level:
+Then, append to the desired build the `.jar` extension in order to use it with Docker
+
+Finally, run docker compose command at `/AuthMicroservice/docker` level:
 
         docker-compose up
+
+Note: Before running docker compose, please verify that you had not created an image with the same name. If so, you should rename image creation from docker compose
